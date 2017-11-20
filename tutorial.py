@@ -102,3 +102,30 @@ print ("Date componantes are", today.day, today.month, today.year)
 now = datetime.now()
 
 print("the time right now is ", now)
+
+# Reading and Writing Files
+f = open("textfile.txt","w+")
+
+for i in range (0,10,1):
+   f.write("This is line %d\n")
+
+f.close()
+
+f = open("textfile.txt","a+")
+
+
+for i in range (0,10,1):
+    f.write("This is line %d\n")
+
+f.close
+
+f = open("textfile.txt","r")
+if f.mode == 'r':
+    contents = f.read()
+    print (contents)
+
+# Working With OS Path utilities
+
+import os
+
+print os
